@@ -6,6 +6,10 @@ public class DefaultCountingOutRhymer {
 
     private int currentIndex = -1;
 
+    public int getCurrentIndex() {
+        return currentIndex;
+    }
+
     public void countIn(int in) {
         if (!isFull())
             numbers[++currentIndex] = in;
