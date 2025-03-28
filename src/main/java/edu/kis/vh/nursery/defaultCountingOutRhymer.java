@@ -10,6 +10,10 @@ public class DefaultCountingOutRhymer {
         return currentIndex;
     }
 
+    public void setCurrentIndex(int currentIndex) {
+        this.currentIndex = currentIndex;
+    }
+
     public void countIn(int in) {
         if (!isFull())
             numbers[++currentIndex] = in;
