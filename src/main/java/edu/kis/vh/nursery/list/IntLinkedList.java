@@ -5,7 +5,7 @@ public class IntLinkedList {
     public static final int DEFAULT_RETURN_VALUE = -1;
 
     private Node last;
-    private int i; // Ten atrybut wydaje się nieużywany – jeśli jest zbędny, można go usunąć.
+    private int i;
 
     public void push(int i) {
         if (last == null)
