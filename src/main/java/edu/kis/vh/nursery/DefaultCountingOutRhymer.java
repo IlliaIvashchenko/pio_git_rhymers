@@ -34,4 +34,9 @@ public class DefaultCountingOutRhymer {
             return DEFAULT_RETURN_VALUE;
         return NUMBERS[total--];
     }
+
+    // Wygenerowany getter dla pola total
+    public int getTotal() {
+        return total;
+    }
 }
