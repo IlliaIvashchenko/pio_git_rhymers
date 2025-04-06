@@ -5,6 +5,8 @@ import edu.kis.vh.nursery.HanoiRhymer;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.Rhymersfactory;
 
+//Kod jest poprawny
+
 class RhymersDemo {
 
     public static void main(String[] args) {
