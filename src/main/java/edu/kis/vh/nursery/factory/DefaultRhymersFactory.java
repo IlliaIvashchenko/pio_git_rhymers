@@ -1,30 +1,54 @@
 package edu.kis.vh.nursery.factory;
 
-import edu.kis.vh.nursery.defaultCountingOutRhymer;
-import edu.kis.vh.nursery.FIFORhymer;
+import edu.kis.vh.nursery.DefaultCountingOutRhymer;
+import edu.kis.vh.nursery.FifoRhymer;
 import edu.kis.vh.nursery.HanoiRhymer;
-import edu.kis.vh.nursery.factory.Rhymersfactory;
 
+/**
+ * Klasa DefaultRhymersFactory implementuje interfejs Rhymersfactory, dostarczając konkretne
+ * warianty klasy DefaultCountingOutRhymer. Każda metoda zwraca inną implementację rhymera,
+ * taką jak standardową, fałszywą, FIFO lub zgodną z zasadami wież Hanoi.
+ */
 public class DefaultRhymersFactory implements Rhymersfactory {
 
+    /**
+     * Zwraca standardową implementację rhymera.
+     * 
+     * @return nowy obiekt DefaultCountingOutRhymer o standardowym zachowaniu
+     */
     @Override
-    public defaultCountingOutRhymer GetStandardRhymer() {
-        return new defaultCountingOutRhymer();
+    public DefaultCountingOutRhymer getStandardRhymer() {
+        return new DefaultCountingOutRhymer();
     }
 
+    /**
+     * Zwraca rhymer o fałszywym zachowaniu, który w tej implementacji jest taki sam
+     * jak standardowy rhymer.
+     * 
+     * @return nowy obiekt DefaultCountingOutRhymer
+     */
     @Override
-    public defaultCountingOutRhymer GetFalseRhymer() {
-        return new defaultCountingOutRhymer();
+    public DefaultCountingOutRhymer getFalseRhymer() {
+        return new DefaultCountingOutRhymer();
     }
 
+    /**
+     * Zwraca rhymer implementujący zachowanie FIFO (First In, First Out).
+     * 
+     * @return nowy obiekt FifoRhymer
+     */
     @Override
-    public defaultCountingOutRhymer GetFIFORhymer() {
-        return new FIFORhymer();
+    public DefaultCountingOutRhymer getFifoRhymer() {
+        return new FifoRhymer();
     }
 
+    /**
+     * Zwraca rhymer zgodny z zasadami problemu wież Hanoi.
+     * 
+     * @return nowy obiekt HanoiRhymer
+     */
     @Override
-    public defaultCountingOutRhymer GetHanoiRhymer() {
+    public DefaultCountingOutRhymer getHanoiRhymer() {
         return new HanoiRhymer();
     }
-
 }
